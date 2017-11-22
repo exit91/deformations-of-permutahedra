@@ -1,0 +1,12 @@
+:LATEX_DATA: 
+#+LATEX_CLASS: koma-article
+#+LATEX_CLASS_OPTIONS: [10pt, a4paper, oneside, headinclude,footinclude, BCOR=5mm]
+#+LATEX_HEADER: \input{latex/preamble.tex}
+#+LATEX_HEADER: \usepackage{stmaryrd}
+#+LATEX_HEADER: \input{latex/custom-commands.tex}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage{makeidx}
+#+LATEX_HEADER: \makeindex
+#+LATEX_HEADER: \usepackage[totoc,unbalanced]{idxlayout}
+:END:

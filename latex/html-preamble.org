@@ -1,0 +1,11 @@
+:HTML_DATA:
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD: .lemma, .definition, .corollary, .proposition {border: solid 1px #ccc; box-shadow: 2px 2px 2px #eee; background: #eee; padding: 1ex 1ex 1ex 1ex;}
+#+HTML_HEAD: .lemma:before {content: "LEMMA";}
+#+HTML_HEAD: .definition:before {content: "DEFINITION";}
+#+HTML_HEAD: .corollary:before {content: "COROLLARY";}
+#+HTML_HEAD: .proposition:before {content: "PROPOSITION";}
+#+HTML_HEAD: .proof {border-left: solid 2px #ccc; border-right: solid 2px #ccc; padding: 1ex 1em 1ex 1em;}
+#+HTML_HEAD: </style>
+#+HTML_HEAD: \( \newcommand\argmax{arg\,max} \newcommand\id{\mathsf{id}} \newcommand\eps{\varepsilon} \newcommand\one[1]{\mathbf{1}[#1]} \newcommand\defeq{\overset{\scriptscriptstyle\mathrm{def}}=} \newcommand\defequiv{\overset{\scriptscriptstyle\mathrm{def}}\Leftrightarrow} \newcommand\dist{\mathsf{dist}} \newcommand\Set[2]{\left\{ #1 \,\middle\mid\, #2 \right\}} \newcommand\sth{sth.} \newcommand\relint{\mathsf{relint}} \newcommand\meet\wedge \newcommand\bigmeet\bigwedge \newcommand\join\vee \newcommand\bigjoin\bigvee \newcommand\AbelianGroups{\mathsf{AbGrp}} \newcommand\AbelianMonoids{\mathsf{AbMon}} \newcommand\ConeHull{\mathsf{Cone}} \newcommand\ConvexHull{\mathsf{Conv}} \newcommand\Edges{\mathsf{Edges}} \newcommand\Face{\mathsf{Face}} \newcommand\FaceLattice{\mathcal{L}} \newcommand\Graph{\mathsf{Graph}} \newcommand\NormalCone{\mathcal{N}} \newcommand\NormalFan{\mathcal{N}} \newcommand\Perm{\mathsf{Perm}} \newcommand\Polytopes{\mathsf{Poly}} \newcommand\QuasiPolytopes{\mathsf{QPoly}} \newcommand\Vertices{\mathsf{Vertices}} \newcommand\GeneralisedSupportFunction{\mathsf{GSF}} \newcommand\DefCone{\mathcal{D}} \newcommand\EdgeCone{\mathcal{D}^E} \newcommand\FacetCone{\mathcal{D}^F} \newcommand\VertexEdgeCone{\mathcal{D}^{VE}} \newcommand\VertexCone{\mathcal{D}^V} \newcommand\im{\mathsf{im}} \newcommand\interior{\mathsf{int}} \newcommand\Span{\mathsf{span}} \newcommand\End{\mathsf{End}} \newcommand\inner[1]{\left\langle #1 \right\rangle} \newcommand\SIGN{\mathsf{SIGN}} \newcommand\sign{\mathsf{sign}} \)
+:END:

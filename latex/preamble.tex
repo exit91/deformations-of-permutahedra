@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arsclassica Article
+% Structure Specification File
+%
+% This file has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Lorenzo Pantieri (http://www.lorenzopantieri.net) with extensive modifications by:
+% Vel (vel@latextemplates.com) %
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	REQUIRED PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage[
+nochapters, % Turn off chapters since this is an article
+beramono, % Use the Bera Mono font for monospaced text (\texttt)
+%eulermath,% Use the Euler font for mathematics
+pdfspacing, % Makes use of pdftex’ letter spacing capabilities via the microtype package
+dottedtoc % Dotted lines leading to the page numbers in the table of contents
+]{classicthesis} % The layout is based on the Classic Thesis style
+
+\usepackage{arsclassica} % Modifies the Classic Thesis package
+
+\usepackage{libertine}
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{Figures/}} % Set the default folder for images
+
+\usepackage{enumitem} % Required for manipulating the whitespace between and within lists
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{subfig} % Required for creating figures with multiple parts (subfigures)
+
+\usepackage{amsmath,amssymb,amsthm} % For including math equations, theorems, symbols, etc
+
+\usepackage{varioref} % More descriptive referencing
+
+\usepackage{mathtools} % for \coloneqq
+
+\usepackage[normalem]{ulem} % for \sout
+
+\usepackage{listings} % for listings
+\usepackage{MnSymbol} % line break symbols for listings
+
+%----------------------------------------------------------------------------------------
+%	THEOREM STYLES
+%---------------------------------------------------------------------------------------
+
+\newtheorem{dummy}{Dummy}[section]
+
+\theoremstyle{definition} % Define theorem styles here based on the definition style (used for definitions and examples)
+\newtheorem{definition}[dummy]{Definition}
+\newtheorem{beispiel}[dummy]{Example}
+
+\theoremstyle{plain} % Define theorem styles here based on the plain style (used for theorems, lemmas, propositions)
+\newtheorem{theorem}[dummy]{Theorem}
+\newtheorem{lemma}[dummy]{Lemma}
+\newtheorem{corollary}[dummy]{Corollary}
+\newtheorem{proposition}[dummy]{Proposition}
+\newtheorem{conjecture}[dummy]{Conjecture}
+\newtheorem{claim}[dummy]{Claim}
+
+\theoremstyle{remark} % Define theorem styles here based on the remark style (used for remarks and notes)
+\newtheorem{remark}[dummy]{Remark}
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%---------------------------------------------------------------------------------------
+
+\hypersetup{
+%draft, % Uncomment to remove all links (useful for printing in black and white)
+colorlinks=true, breaklinks=true, bookmarks=true,bookmarksnumbered,
+urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, % Link colors
+pdftitle={}, % PDF title
+pdfauthor={\textcopyright}, % PDF Author
+pdfsubject={}, % PDF Subject
+pdfkeywords={}, % PDF Keywords
+pdfcreator={pdfLaTeX}, % PDF Creator
+pdfproducer={LaTeX with hyperref and ClassicThesis} % PDF producer
+}
+
+
+%----------------------------------------------------------------------------------------
+%	LISTINGS
+%---------------------------------------------------------------------------------------
+
+
+% ********************************************************************
+% listings
+% ********************************************************************
+
+\definecolor{lightergray}{gray}{0.99}
+
+\lstset{language=[LaTeX]Tex,
+    keywordstyle=\color{RoyalBlue},
+    basicstyle=\normalfont\ttfamily,
+    commentstyle=\color{Emerald}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=5,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=lines,
+    backgroundcolor=\color{lightergray}
+}
+
+\lstset{	morekeywords=%
+        {RequirePackage,newboolean,DeclareOption,setboolean,%
+        ProcessOptions,PackageError,ifthenelse,boolean,%
+        chapterNumber,sodef,textls,allcapsspacing,%
+        MakeTextLowercase,orgtheindex,endtheindex,%
+        @ifpackageloaded,undefined,sfdefault,%
+        DeclareRobustCommand,spacedallcaps,%
+        microtypesetup,MakeTextUppercase,lowsmallcapsspacing,%
+        lowsmallcapsspacing,spacedlowsmallcaps,
+        spacedlowsmallcaps,lehead,headmark,color,%
+        headfont,partname,thepart,titleformat,part,
+        titlerule,chapter,thechapter,thesection,%
+        subsection,thesubsection,thesubsubsection,%
+        paragraph,theparagraph,descriptionlabel,titlespacing,%
+        graffito,lineskiplimit,finalhyphendemerits,%
+        colorbox,captionsetup,labelitemi,%
+        myincludegraphics,hypersetup,setlength,%
+        definecolor,lsstyle,textssc,subsubsection,%
+        graffito@setup,includegraphics,ifdefined,%
+        myTitle,textcopyright,myName,lstset,lstnewenvironment,%
+        setkeys,lst@BeginAlsoWriteFile,contentsname,%
+        toc@heading,@ppljLaTeX,z@,check@mathfonts,%
+        sf@size,ptctitle,mtctitle,stctitle,lst@intname,%
+        @empty,math@fontsfalse,@ppljscTeX,@iwonaTeX,%
+        @iwonascLaTeX,@ctTeX,tw@,ct@sc,@ctTeX,f@family,%
+        f@shape,ct@sc,ctLaTeX,ctLaTeXe,@twoe,@sctwoe,%
+        texorpdfstring,m@th,ctTeX,@mkboth,ProvidesPackage,%
+        theindex,PackageInfo,PackageWarningNoLine,%
+        mtifont,mtcindent,@iwonaLaTeX,@ppljTeX,@iwonascTeX,%
+        rohead,orgendtheindex,@ppljscLaTeX,%
+        @ifclassloaded,toc@headingbkORrp,backreftwosep,%
+        backrefalt,backreflastsep,areaset,pnumfont,%
+        arsincludegraphics,ExecuteOptions,PackageWarning,textcolor,%
+        MessageBreak,ars@@includegraphics,ifcld@backref,rofoot,formatchapter,%
+        if@twoside},
+        commentstyle=\color{Emerald}\ttfamily,%
+        frame=lines}
+
+\lstset{basicstyle=\normalfont\ttfamily}
+\lstset{flexiblecolumns=true}
+\lstset{moredelim={[is][\normalfont\itshape]{/*}{*/}}}
+\lstset{basicstyle=\normalfont\ttfamily}
+\lstset{flexiblecolumns=false}
+\lstset{moredelim={[is][\ttfamily]{!?}{?!}}}
+\lstset{escapeinside={£*}{*£}}
+\lstset{firstnumber=last}
+\lstset{moredelim={[is][\ttfamily]{!?}{?!}}}
+
+\DeclareRobustCommand*{\pacchetto}[1]{{\normalfont\ttfamily#1}%
+\index{Pacchetto!#1@\texttt{#1}}%
+\index{#1@\texttt{#1}}}
+
+\DeclareRobustCommand*{\bibtex}{\textsc{Bib}\TeX%
+\index{bibtex@\textsc{Bib}\protect\TeX}%
+}
+
+\DeclareRobustCommand*{\amseuler}{\protect\AmS{} Euler%
+\index{AmS Euler@\protect\AmS~Euler}%
+\index{Font!AmS Euler@\protect\AmS~Euler}}
+
+\lstnewenvironment{code}%
+{\setkeys{lst}{columns=fullflexible,keepspaces=true}%
+\lstset{basicstyle=\small\ttfamily}%
+}{}
+
+\lstset{extendedchars}
+\lstnewenvironment{sidebyside}{%
+    \global\let\lst@intname\@empty
+    \setbox\z@=\hbox\bgroup
+    \setkeys{lst}{columns=fullflexible,%
+    linewidth=0.45\linewidth,keepspaces=true,%
+    breaklines=true,%
+    breakindent=0pt,%
+    boxpos=t,%
+    basicstyle=\small\ttfamily
+}%
+    \lst@BeginAlsoWriteFile{\jobname.tmp}%
+}{%
+    \lst@EndWriteFile\egroup
+        \begin{center}%
+            \begin{minipage}{0.45\linewidth}%
+                \hbox to\linewidth{\box\z@\hss}
+            \end{minipage}%
+            \qquad
+            \begin{minipage}{0.45\linewidth}%
+            \setkeys{lst}{frame=none}%
+                \leavevmode \catcode`\^^M=5\relax
+                \small\input{\jobname.tmp}%
+            \end{minipage}%
+        \end{center}%
+}
+
+\newcommand{\omissis}{[\dots\negthinspace]}
+
+\graphicspath{{Graphics/}}
+
+\hyphenation{con-fi-gu-ra-tion}
+
+\newcommand{\meta}[1]{$\langle${\normalfont\itshape#1}$\rangle$}
+\lstset{escapeinside={£*}{*£}}
+
+
+\DeclareRobustCommand*{\miktex}{MiK\TeX%
+\index{miktex@MiK\protect\TeX}%
+}
+
+\DeclareRobustCommand*{\metafont}{\MF%
+\index{METAFONT@\protect\MF}%
+}
+
+\DeclareRobustCommand*{\metapost}{\MP%
+\index{METAPOST@\protect\MP}%
+}
+
+\DeclareRobustCommand*{\texlive}{\TeX{}~Live%
+\index{texlive@\protect\TeX{}~Live}%
+}
+
+\lstset{prebreak=\raisebox{0ex}[0ex][0ex]
+        {\ensuremath{\rhookswarrow}}}
+\lstset{postbreak=\raisebox{0ex}[0ex][0ex]
+        {\ensuremath{\rcurvearrowse\space}}}
+\lstset{breaklines=true, breakatwhitespace=true}
